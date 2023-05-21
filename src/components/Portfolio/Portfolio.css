@@ -105,6 +105,7 @@
 .__portfolio-btn a{
     color: var(--white);
     text-decoration: none;
+    margin: .5rem;
 }
 
 

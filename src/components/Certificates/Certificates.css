@@ -9,7 +9,7 @@
     font-size: 24rem;
     overflow: hidden;
     font-family: 'Montserrat', sans-serif;
-    font-family: 700;
+    font-weight: 700;
     color: var(--secondary);
     text-transform: uppercase;
 }

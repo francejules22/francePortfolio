@@ -71,7 +71,7 @@ const About = () => {
                   </div>
                 </Flip>
                   <div className="__about-button">
-                      <button><a href="https://drive.google.com/file/d/1iTXFucCRx4331Tj2rF8bG46os2aNOBVT/view?usp=share_link" target="__blank">Download Resume</a></button>
+                      <button><a href="https://drive.google.com/file/d/1ZZFgyHdG8-oMj6rGDBwyRhV4rsMowISi/view?usp=sharing" target="__blank">Download Resume</a></button>
                   </div>
               </div>
             </div>
