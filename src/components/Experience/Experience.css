@@ -59,15 +59,6 @@
  }
 
 
-.__content1 span{
-    top: 2rem;
-    left: 40rem;
-}
-
-.__content2 span{
-    top: 2rem;
-    right: 39rem;
-}
 
 .__content2{
     text-align: end;
@@ -170,15 +161,6 @@
         border-radius: 3px;
         font-size: 10px;
     }
-    .__content1 span{
-        top: 4rem;
-        left: 16rem;
-    }
-    
-    .__content2 span{
-        top: 4rem;
-        right: 16rem;
-    }
     .__wrapper2{
         top: -18rem;
     }
@@ -215,15 +197,6 @@
     .__wrapper2{
         top: -14rem;
     }
-    .__content1 span{
-        top: 4.2rem;
-        left: 10rem;
-    }
-    
-    .__content2 span{
-        top: 4.2rem;
-        left: 10rem;
-    }
     .__content2{
         text-align: justify;
     }
@@ -232,7 +205,7 @@
 
 @media screen and (max-width: 390px){
     .__experience-container{
-        height: 62rem;
+        height: 70rem;
     }
     .__experience-title h2{
         top: 1rem;
@@ -259,15 +232,6 @@
     .__wrapper2{
         top: -12rem;
     }
-    .__content1 span{
-        top: 4rem;
-        left: 14rem;
-    }
-    
-    .__content2 span{
-        top: 3rem;
-        left: 14rem;
-    }
     .__content2{
         text-align: justify;
     }
@@ -279,13 +243,7 @@
     .__experience-container{
         height: 68rem;
     }
-    .__content1 span{
-        top: 4rem;
-        left: 12rem;
-    }
-    
-    .__content2 span{
-        top: 3rem;
-        left: 12rem;
+    .__experience-wrapper{
+        margin-top: 4rem;
     }
 }

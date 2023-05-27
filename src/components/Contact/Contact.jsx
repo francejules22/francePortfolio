@@ -1,12 +1,39 @@
-import React from 'react';
+import React, { useState } from 'react';
 import  Facebook  from '../../assets/editFB.png';
 import  LinkedIn  from '../../assets/editLinkedin.png';
 import  Github  from '../../assets/GithubEdit.png';
 import  Behance  from '../../assets/editBehance.png';
 import {Slide, Fade} from 'react-reveal';
+import emailjs from '@emailjs/browser';
 import './Contact.css';
 
+
+const Result = () => {
+   return(
+    <p className="__result">
+        Your message has been successfully sent. I'll get back to you soon.
+    </p>
+   )
+}
+
+
 const Contact = () => {
+    const [result, showResult] = useState(false);
+    //Adding Contact Function using Email.js template
+    const sendEmail = (e) => {
+        e.preventDefault();
+    
+        emailjs.sendForm('service_cdnhe8d', 'template_h4xtwus', e.target, 'Tis3H7_em1Kw-TOhk')
+          .then((result) => {
+              console.log(result.text);
+          }, (error) => {
+              console.log(error.text);
+          });
+         e.target.reset();
+         showResult(true);
+      };
+
+
     return(
         <>
            <div className="container-fluid __contact-container" id="contact">
@@ -39,36 +66,34 @@ const Contact = () => {
                             <h2>Get In Touch</h2>
                         </div>
                         <div className="__contact-card">
-                           <form className="__contact-form">
+                     {/*Adding Contact Functionality */}
+                           <form className="__contact-form"  onSubmit={sendEmail}>
                               <div className="group">
-                                  <input placeholder=" " type="text" required="" />
-                                  <label for="name">First Name</label>
-                              </div>
-                              <div className="group">
-                                  <input placeholder=" " type="text" required="" />
-                                  <label for="name">Last Name</label>
-                              </div>
-                              <div className="group"> 
-                                  <input placeholder=" " type="email" id="email" name="email" required="" />
-                                  <label for="email">Contact</label>
+                                  <input placeholder=" " type="text" name="fullName" required="" />
+                                  <label for="name">Full Name</label>
                               </div>
                               <div className="group"> 
                                   <input placeholder=" " type="email" id="email" name="email" required="" />
                                   <label for="email">Email</label>
+                              </div>
+                              <div className="group"> 
+                                  <input placeholder=" " type="contact" id="contact" name="phoneNumber" required="" />
+                                  <label for="number">Contact</label>
                               </div>
                               <div className="group">
                                 <textarea placeholder="" id="message" name="message" rows="5" required=""></textarea>
                                 <label for="message">Message</label>
                              </div>
                               <button type="submit">Submit</button>
-                           </form>
+                              <div className="__result-content">{ result ? <Result/> : null }</div>
+                          </form>
                       </div>
                     </div>
                   </Fade>
                 </div>
               </div>
               <footer className="__contact-footer">
-                  <p>&copy; France 2023, All Right Reserved</p>
+                  <p>&copy;France 2023. All Right Reserved</p>
               </footer>
            </div>
         </>

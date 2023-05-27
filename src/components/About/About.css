@@ -11,6 +11,7 @@
     font-weight: 700;
     color: var(--secondary);
     padding-left: 2.5rem;
+    overflow: hidden;
 }
 
 .__about-img-wrapper{
@@ -391,4 +392,23 @@
     .__about-button a{
         font-size: 8px;
     } 
+}
+
+@media screen and (max-width: 360px){
+    .__about-img-wrapper{
+        top: -3rem;
+        left: 1rem;
+        width: 8rem;
+        height: 10rem;
+    }
+     .__about-img-wrapper img{
+        top: -0.3rem;
+        width: 8rem;
+        height: 10rem;
+    }
+        .__para-about-content{
+        top: -3rem;
+        right: 10px;
+        font-size: 6px;
+    }
 }

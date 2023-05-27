@@ -76,7 +76,7 @@
 .__services-button{
     display: flex;
     justify-content: center;
-    padding-top: 5rem;
+    padding-top: 2rem;
 }
 
 .__services-button a{
@@ -210,16 +210,13 @@
         font-size: 4.5rem;
     }
     .__services-wrapper{
-       margin-left: 1rem;
+       margin-left: 2.2rem;
        width: 18rem;
        height: 15rem;
        top: -6.2rem;
     }
     .__services-wrapper:hover{
         margin-top: 1px
-    }
-    .__services-button button{
-        padding: 12px 18px;
     }
     .__services-title h2{
         top: 2.3rem;
@@ -238,13 +235,16 @@
         top: 2rem;
     }
     .__services-button button{
-        padding: 8px 12px;
+        padding: 4px 6px;
+    }
+    .__services-button a{
+        font-size: 12px;
     }
 }
 
 
-@media screen and (max-width: 992px){
-    .__services-wrapper:hover{
-        margin-top: 20px;
+@media screen and (max-width: 360px){
+    .__services-wrapper{
+        margin-left: 1.5rem;
     }
 }

@@ -52,6 +52,7 @@
     outline: 0;
     width: 100%;
     background-color: transparent;
+    color: white;
   }
   
   .__contact-form .group input:placeholder-shown+ label, .__contact-form .group textarea:placeholder-shown +label {
@@ -112,6 +113,7 @@
   }
   
  .__contact-content h3{
+    width: 50%;
     position: relative;
     left: 12rem;
     top: -4rem;
@@ -125,6 +127,7 @@
    position: relative;
    top: 5rem;
    left: 2.5rem;
+   width: 90%;
  }
 
  .__contact-socials h3{
@@ -199,6 +202,17 @@
 }
 
 
+.__result {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   font-family: 'Montserrat', sans-serif;
+   font-size: 16px;
+   color: white;
+   padding-top: 24px;
+}
+
+
 @media screen and (max-width: 992px){
   .__contact-container{
     height: 60rem;
@@ -214,7 +228,8 @@
   .__contact-content h3{
     left: 4rem;
     top: -1rem;
-    font-size: 2.5rem;
+    font-size: 2rem;
+    width: 90%;
  }
  .__contact-wrapper{
     top: -8rem;
@@ -310,6 +325,7 @@
     left: 4rem;
     top: -1rem;
     font-size: 1.8rem;
+
   }
  .__contact-wrapper{
     top: -5rem;
@@ -338,7 +354,7 @@
 }
 
 
-@media screen and (max-width: 360px){
+@media screen and (max-width: 390px){
   .__contact-container{
     height: 55rem;
   }
@@ -357,33 +373,59 @@
     font-size: 1.2rem;
   }
   .__contact-wrapper{
-    top: -5rem;
-    left: 1.5rem;
-    height: 32rem;
+    top: -4rem;
+    left: 2rem;
+    height: 30rem;
     width: 18rem;
     background-size: 3px 25%, 25% 3px, 3px 25%, 25% 3px, calc(100% - 8px) calc(100% - 8px);
- }
- .__contact-card{
-    left: 1rem;
+  }
+  .__contact-card{
+     left: 1rem;
+     top: -10px;
+     width: 16rem;
+     height: 15rem;
+     background-color: var(--primary-variant);
+  } 
+  .__contact-details h2{
+     font-size: 1.5rem;
+     padding: 20px 0 10px 14px;
+  }
+  .__contact-socials{
+     top: 35rem;
+  }
+  .__contact-socials li{
+    margin: 0 -100px;
+  }
+  .__contact-socials h3{
+    font-size: 14px;
+  }
+  .__contact-footer{
+    top: 6rem;
+  }
+  .__contact-footer p{
+    font-size: 12px;
+  }
+  .__result {
+    font-size: 10px;
+    padding-top: 18px;
+  }
+  .__contact-form .group label {
+    font-size: 10px;
+    color: var(--white-variant);
+    position: absolute;
     top: -10px;
-    width: 16rem;
-    height: 15rem;
+    left: 10px;
     background-color: var(--primary-variant);
- } 
-.__contact-details h2{
-   font-size: 1.5rem;
-   padding: 20px 0 10px 14px;
- }
- .__contact-socials{
-  top: 35rem;
- }
- .__contact-socials h3{
-   font-size: 14px;
- }
- .__contact-footer{
-   top: 6rem;
+    transition: all .3s ease;
+  }
 }
- .__contact-footer p{
-   font-size: 12px;
- }
+
+
+@media screen and (max-width: 360px){
+  .__contact-wrapper{
+    left: 1.5rem;
+  }
+  .__contact-socials{
+    padding-left: 2rem;
+  }
 }

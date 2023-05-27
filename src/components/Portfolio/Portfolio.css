@@ -99,6 +99,7 @@
 .__portfolio-btn button{
     background-color: var(--tertiary);
     margin-top: 1rem;
+    border-radius: 3px;
 }
 
 
@@ -232,6 +233,12 @@
     }
     .__btn {
         display: block;
+    }
+}
+
+@media screen and (max-width: 390px){
+    .__portfolio-container{
+        height: 360rem;
     }
 }
 

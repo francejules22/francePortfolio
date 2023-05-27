@@ -12,7 +12,7 @@
     font-weight: 700;
     text-transform: uppercase;
     color: var(--secondary);
-    font-size: 26rem;
+    font-size: 24rem;
 }
 
 .__home-para{
@@ -44,19 +44,19 @@
 .__para-3{
     position: absolute;
     top: 45rem;
-    left: 23rem;
-    font-size: 42px;
+    left: 9rem;
+    font-size: 30px;
 }
 
 .__home-button button {
     position: absolute;
-    top: 20rem;
+    top: 10rem;
     left: 2rem;
-    padding: 16px 24px;
+    padding: 10px 16px;
     border: 2px solid var(--tertiary);
     position: relative;
     overflow: hidden;
-    border-radius: 8px;
+    border-radius: 5px;
     background-color: transparent;
     text-align: center;
     text-transform: uppercase;
@@ -97,33 +97,32 @@
     color: var(--white);
 }
 
+
 .__home-img img{
-    position:absolute;
-    left: -26rem;
+    position: absolute;
+    left: 22rem;
     bottom: -34rem;
     width: 48rem;
     height: 62rem;
-    border-bottom: 2px solid var(--tertiary);   
     overflow: hidden;
+    border-bottom: 1px solid var(--tertiary);
 }
 
 .__home-social{
-    position: absolute;
-    right: 0px;
+    position: relative;
+    right: 0;
 }
 
 .__home-social-links img{
     width: 20px;
     height: 20px;
-}
-
-.__home-social-links li{
-    margin: 15px 60px 0 0;
+    margin: 15px 60px 0 60px;
     transform: scale(0.8);
     transition: all .3s ease-in-out
 }
 
-.__home-social-links li:hover{
+
+.__home-social-links img:hover{
     transform: scale(1);
 }
 
@@ -133,54 +132,50 @@
         height: 45rem;
     }
     .__home-para-title{
-        font-size: 14rem;
+        font-size: 12rem;
     }
     .__para-1{
         position: absolute;
-        top: 16rem;
+        top: 14rem;
         left: 2.5rem;
         font-size: 30px;
     }
     
     .__para-2{
         position: absolute;
-        top: 20rem;
+        top: 18rem;
         left: 2.2rem;
         font-size: 45px;
     }
     .__para-3{
         position: absolute;
-        top: 26rem;
-        left: 10rem;
-        font-size: 30px;
+        top: 23rem;
+        left: 3rem;
+        font-size: 18px;
     }
     .__home-img img{
         position: absolute;
-        left: -15rem;
+        left: 12rem;
         bottom: -17rem;
-        width: 26rem;
+        width: 24rem;
         height: 32rem;
     }
-    .__home-social-links{
-        position: absolute;
-        right: -40px;
-    }
+
     .__home-social-links img{
         width: 18px;
         height: 18px;
     }
     .__home-social-links li{
-        margin: 8px 60px 0 0;
+        margin: -5px 30px 0 0;
     }
     .__home-button button{
         position: absolute;
-        top: 32rem;
+        top: 28rem;
         left: 2.5rem;
-        padding: 12px 16px;
+        padding: 8px 10px;
      }  
      .__home-button a{
-        margin: 40px 20px;
-        font-size: 20px;
+        font-size: 18px;
     }
 }
 
@@ -198,26 +193,31 @@
         font-size: 24px;
     }
     .__para-2{
-        top: 14rem;
-        left: 1.4rem;
-        font-size: 38px;
+        top: 15rem;
+        left: 1.5rem;
+        font-size: 30px;
     }
     .__para-3{
-        top: 18rem;
+        top: 19rem;
         left: 3rem;
-        font-size: 24px;
+        font-size: 12px;
     }
     .__home-img img{
-        left: -11rem;
+        left: 6rem;
         bottom: -15rem;
         width: 22rem;
         height: 28rem;
     }
     .__home-button button{
-        top: 28rem;
+        top: 23rem;
         left: 1.6rem;
-        padding: 8px 10px;
+        padding: 4px 8px;
+        font-size: 18px;
      }  
+    
+     .__home-social-links li{
+        margin: -5px -10px 0 -50px;
+    }
 }
 
 
@@ -229,8 +229,8 @@
         font-size: 7rem;
     }
     .__home-img img{
-        left: -7rem;
-        bottom: -10rem;
+        left: 4rem;
+        bottom: -11rem;
         width: 16rem;
         height: 20rem;
     }
@@ -242,31 +242,27 @@
     .__para-2{
         top: 11rem;
         left: 1.3rem;
-        font-size: 32px;
+        font-size: 24px;
     }
     .__para-3{
-        top: 15rem;
-        left: 2.2rem;
-        font-size: 18px;
+        top: 14rem;
+        left: 2rem;
+        font-size: 12px;
     }
     .__home-button button{
-        top: 20rem;
+        top: 18rem;
         left: 1.3rem;
-        padding: 6px 8px;
+        padding: 4px 6px;
     }
     .__home-button a{
-        margin: 40px 15px;
-        font-size: 14px;
+        font-size: 12px;
     }
     .__home-social-links img{
         width: 12px;
         height: 12px;
     }
     .__home-social-links li{
-        margin: 1px 60px 0 0;
-    }
-    .__home-button a{
-        font-size: 16px;
+        margin: -5px -10px 0 -60px; 
     }
 }
 
@@ -275,62 +271,66 @@
         height: 18rem;
     }
     .__home-para-title{
+        padding-top: 20px;
         font-size: 4.5rem;
     } 
     .__home-img img{
-        left: -6rem;
+        left: 1.8rem;
         bottom: -7.5rem;
-        width: 12rem;
-        height: 15rem;
+        width: 10rem;
+        height: 13rem;
     }
     .__para-1{
-        top: 6rem;
+        top: 7rem;
         font-size: 12px;
     }
     .__para-2{
-        top: 7.2rem;
-        font-size: 20px;
+        top: 8.5rem;
+        font-size: 16px;
     }
     .__para-3{
         font-size: 10px;
-        top: 9.5rem;
+        top: 10.5rem;
         left: 2rem;
     }
     .__home-button button{
-        top: 15rem;
+        top: 14rem;
         left: 1.3rem;
-        padding: 0;
-        margin: 0;
+        padding: 1px;
     }
     .__home-button a{
-        font-size: 10px;
+        font-size: 9px;
     }
     .__home-social-links img{
         width: 10px;
         height: 10px;
     }
     .__home-social-links li{
-        margin: -6px 60px 0 0;
+        margin: -10px -10px 0 -90px; 
     }
 
 }
 
 @media screen and (max-width: 360px){
     .__home-img img{
-        left: -6rem;
-        bottom: -5.5rem;
-        width: 10rem;
-        height: 12rem;
+        left: 2.5rem;
+        bottom: -5rem;
+        width: 8rem;
+        height: 10rem;
     }
       .__home-social-links img{
         width: 8px;
         height: 8px;
     }
       .__home-social-links li{
-        margin: -12px 50px 0 0;
+        margin: -10px -10px 0 -90px; 
     }
-     .__home-button button{
+    .__home-button button{
         top: 14rem;
         left: 1.3rem;
+        padding: 1px;
+    }
+    .__home-button a{
+        font-size: 8px;
     }
 }

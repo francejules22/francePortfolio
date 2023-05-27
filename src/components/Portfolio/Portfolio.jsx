@@ -23,7 +23,7 @@ const data_images = [
         id: 1,
         image: DiabetesApp,
         title: 'Diabetest App',
-        description: 'DiabeTest is a free app that helps you detect the Type 2 Diabetes Mellitus Disease using Machine Learning Algorithm and provides with better results.This was also my Thesis Proposal requirements for graduation.',
+        description: 'DiabeTest is a free app that helps you detect the Type 2 Diabetes Mellitus Disease using Machine Learning Algorithm and provides with better results.This was also my Thesis Proposal requirements for graduation. Also our Thesis Project was awarded as a Best in Research Paper (Technology Category) at the ISAT-U Research Colloquium 2023 held at ISATU Miagao Campus on May 16, 2023.',
         iconOne: 'ri-html5-fill',
         iconTwo: 'ri-css3-fill',
         iconThree: 'ri-javascript-fill',

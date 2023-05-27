@@ -4,7 +4,7 @@ import AwardsImg from '../../assets/awards.png';
 import ClientsImg from '../../assets/clients.png';
 import ProjectsImg from '../../assets/projects.png';
 import ExperienceImg from '../../assets/experience.png';
-import {Fade, Slide, Flip} from 'react-reveal';
+import {Fade, Slide} from 'react-reveal';
 import './About.css';
  
 
@@ -39,7 +39,7 @@ const About = () => {
                       </p>
                   </div>
 
-                <Flip right>
+                <Fade right>
                   <div className="__about-info-wrapper d-flex">
                       <div className="__about-info">
                            <div className="__about-info-content">
@@ -69,9 +69,9 @@ const About = () => {
                            </div>
                       </div>
                   </div>
-                </Flip>
+                </Fade>
                   <div className="__about-button">
-                      <button><a href="https://drive.google.com/file/d/1ZZFgyHdG8-oMj6rGDBwyRhV4rsMowISi/view?usp=sharing" target="__blank">Download Resume</a></button>
+                      <button><a href="https://drive.google.com/file/d/1cz4hUU5bvLfJSSRm2rti42QrYokck4ns/view?usp=sharing" target="__blank">Download Resume</a></button>
                   </div>
               </div>
             </div>

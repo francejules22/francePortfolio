@@ -13,7 +13,7 @@ const Home = () => {
     return(
          <div className="container-fluid __home-container" id="home">
             <div className="row d-flex justify-content-center align-items-center">
-                <div className="col">
+                <div className="col-4">
                     <div className="__home-content">
                         <Slide left>
                            <p className="__home-para-title">Hello</p>
@@ -27,11 +27,11 @@ const Home = () => {
                        </p>
                     </div>
                     <div className="__home-button">
-                        <button><a href="#about">Get to know more about me</a></button>
+                        <button><a href="#about">Get to know more</a></button>
                     </div>
                 </div>
 
-                <div className="col">
+                <div className="col-6">
                     <Fade right>
                       <div className="__home-img">
                          <img src={HomeImg} alt="Home Background"/>
@@ -39,7 +39,7 @@ const Home = () => {
                     </Fade>
                 </div>
 
-                <div className="col">
+                <div className="col-2">
                     <div className="__home-social">
                         <div className="__home-social-links">
                             <ul>

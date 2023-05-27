@@ -11,6 +11,7 @@
     font-weight: 700;
     text-transform: uppercase;
     padding-left: 2.5rem;
+    overflow:hidden;
 }
 
 .__skills-content h2{
@@ -23,10 +24,14 @@
 
 }
 
+.__skills-wrapper{
+    width: 250px;
+}
+
 .__skills-icon ul{
     position: relative;
     top: -18rem;
-    left: 4rem;
+    left: 50rem;
     display: flex;
     justify-content: center;
 }
@@ -95,7 +100,7 @@
     }
     .__skills-icon ul{
         top: -10rem;
-        left: 4rem;
+        left: 26rem;
     }
     
     .__skills-icon img{
@@ -119,7 +124,7 @@
     }
     .__skills-icon ul{
         top: -9rem;
-        left: 6rem;
+        left: 22rem;
     }
     .__skills-icon img{
         margin: 1.5rem 0 1rem 1rem;
@@ -143,7 +148,7 @@
     }
     .__skills-icon ul{
         top: -7rem;
-        left: 4rem;
+        left: 14rem;
     }
     .__skills-icon img{
         margin: 1rem 0 1rem .5rem;
@@ -163,15 +168,21 @@
     .__skills-content h2{
         top: -3rem;
         left: 2rem;
-        font-size: 14px;
+        font-size: 10px;
     }
     .__skills-icon ul{
         top: -4.5rem;
-        left: 4rem;
+        left: 6rem;
     }
     .__skills-icon img{
         margin: 1rem 0 .5rem .2rem;
         width: 30px;
         height: 30px;
+    }
+}
+
+@media screen and (max-width: 369px){
+    .__skills-icon ul{
+        left: 5rem;
     }
 }
